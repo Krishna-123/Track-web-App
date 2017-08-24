@@ -1,1 +1,1 @@
-web: node TCPServer.js
+web: node index.js

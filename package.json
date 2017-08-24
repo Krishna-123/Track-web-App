@@ -2,13 +2,14 @@
   "name": "simple-tcp-local",
   "version": "1.0.0",
   "description": "",
-  "main": "TCPServer.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
-  "scripts":{
-  	"start": "node TCPServer.js"
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4"
   }
 }
