@@ -8,6 +8,11 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 var port = process.env.PORT || 3000;
 
+app.get('/', function(req, res){
+	console.log('get received');
+	res.write("hello node js in heroku");
+});
+
 app.post('/', function(req, res){
     staTus = req.body.data;
 
