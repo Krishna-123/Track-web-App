@@ -9,8 +9,13 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 var port = process.env.PORT || 3000;
 
 app.get('/', function(req, res){
-	console.log('get received');
-	res.write("hello node js in heroku");
+	
+	res.write('hello node js in heroku');
+	 console.log('Get request received ');
+              
+	 res.status(200);
+	 res.end();
+	
 });
 
 app.post('/', function(req, res){
