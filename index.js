@@ -25,7 +25,7 @@ app.post('/', function(req, res){
  console.log('Post req received ');
 
  res.status(200);
- res.end();
+ res.end(staTus);
 });
 
 var server = app.listen(port,function () {
