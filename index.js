@@ -19,7 +19,7 @@ app.get('/', function(req, res){
 });
 
 app.post('/', function(req, res){
-    staTus = req.body.data;
+    var staTus = JSON.stringify(req.body);
 
  console.log(staTus);   
  console.log('Post req received ');
@@ -29,6 +29,6 @@ app.post('/', function(req, res){
 });
 
 var server = app.listen(port,function () {
-  console.log("Example app listening at ")
+  console.log("Example app listening ")
 });
 

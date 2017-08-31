@@ -30,7 +30,7 @@ function handleConnection(conn) {
   function onConnData(d) {
    // console.log('connection data from %s: %j', remoteAddress, d);
     console.log('data is ' + d);
-   // conn.write(d);
+    conn.write(d);
   }
 
   function onConnClose() {
